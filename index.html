@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R040BXJX9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5R040BXJX9');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huon</title>
@@ -46,15 +55,33 @@
             color: #265490;
             margin-bottom: 20px;
         }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+        .competition-link {
+            margin-top: 20px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">Huon</div>
         <div class="section">
+            <h2>About Us</h2>
             <p>Huon is building a community to develop prompts that customers can implement in real-world applications. We help integrate LLM-based solutions for diverse problems.</p>
-            <p>Check out our <a href="competitions.html">current competitions</a>.</p>
-            <p>Contact: <a href="mailto:contact@huon.ai">contact@huon.ai</a></p>
+            <p><a href="competitions.html" class="btn">View Current Competitions</a></p>
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:contact@huon.ai">contact@huon.ai</a></p>
         </div>
     </div>
 </body>

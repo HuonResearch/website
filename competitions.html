@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R040BXJX9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5R040BXJX9');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huon - Competitions</title>
@@ -46,6 +55,28 @@
             color: #265490;
             margin-bottom: 20px;
         }
+        .competition-details {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -53,12 +84,17 @@
         <div class="logo">Huon</div>
         <div class="section">
             <h2>Current Competition</h2>
-            <p><strong>Launch Date:</strong> September 2, 2024</p>
-            <p><strong>Closing Date:</strong> September 6, 2024, noon EST</p>
-            <p><strong>Instructions:</strong> Our client would like to know which fruits contain the letter "r". The dataset includes a list of fruits and the number of "r"s in each fruit's name. Use this dataset to develop a prompt that will classify whether a given fruit contains the letter "r".</p>
-            <p>Download the training data: <a href="1-train_data.csv" download>1-train_data.csv</a></p>
-            <p>Submit your entry: <a href="https://forms.gle/J8m3AuoYQQCWHhgq9" target="_blank">Submission Form</a></p>
-            <p><a href="index.html">Back to Home</a></p>
+            <div class="competition-details">
+                <p><strong>Launch Date:</strong> September 2, 2024</p>
+                <p><strong>Closing Date:</strong> September 6, 2024, noon EST</p>
+            </div>
+            <h3>Instructions:</h3>
+            <p>Our client would like to know which fruits contain the letter "r". The dataset includes a list of fruits and the number of "r"s in each fruit's name. Use this dataset to develop a prompt that will classify whether a given fruit contains the letter "r".</p>
+            <p>
+                <a href="1-train_data.csv" download class="btn">Download Training Data</a>
+                <a href="https://forms.gle/J8m3AuoYQQCWHhgq9" target="_blank" class="btn">Submit Your Entry</a>
+            </p>
+            <a href="index.html" class="back-link">Back to Home</a>
         </div>
     </div>
 </body>

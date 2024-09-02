@@ -1,12 +1,14 @@
 # Huon Research Website
 
-This repository contains the source code for the Huon Research website, which showcases our AI research competitions and community-driven approach to developing prompts for real-world LLM applications.
+This repository contains the source code for the Huon Research website, which showcases our competitions and community-driven approach to developing prompts for real-world LLM applications.
 
 ## Project Structure
 
 - `index.html`: The main landing page for the Huon Research website.
 - `competitions.html`: A page displaying information about current competitions.
 - `README.md`: This file, containing information about the project.
+- `setup.py`: Configuration file for competition settings.
+- `1_data_preparation.py`: Script for processing and splitting datasets.
 
 ## Customization
 
